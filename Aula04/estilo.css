@@ -1,0 +1,14 @@
+li{
+    background-color: cornflowerblue;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    border: groove 2px red;
+
+    text-decoration: overline;
+    text-transform: capitalize;
+}
+
+p{
+    background-color: blueviolet;
+}
