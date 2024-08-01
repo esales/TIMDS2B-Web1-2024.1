@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex-Grow - Exemplo</title>
+  <style>
+    .flex-container {
+      display: flex;
+      background-color: #f1f1f1;
+      height: 100px;
+    }
+
+    .flex-item {
+      background-color: #4CAF50;
+      color: white;
+      margin: 5px;
+      text-align: center;
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    .flex-item-2 {
+      flex-grow: 2; 
+    }
+  </style>
+</head>
+<body>
+  <h2>Flex-Grow</h2>
+  <div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item flex-item-2">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+</body>
+</html>

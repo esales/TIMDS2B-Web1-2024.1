@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align-Content - Exemplo</title>
+  <style>
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 500px;
+      height: 50vh;
+      background-color: #f1f1f1;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .flex-item {
+      background-color: #4CAF50;
+      color: white;
+      margin: 5px;
+      padding: 20px;
+      text-align: center;
+      flex: 1 1 100px; /* Base size of 100px */
+    }
+  </style>
+</head>
+<body>
+  <h2>Align-Content: Flex-Start</h2>
+  <div class="flex-container" style="align-content: flex-start;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+    <div class="flex-item">Item 4</div>
+    <div class="flex-item">Item 5</div>
+    <div class="flex-item">Item 6</div>
+    <div class="flex-item">Item 7</div>
+    <div class="flex-item">Item 8</div>
+    <div class="flex-item">Item 9</div>
+  </div>
+
+  <h2>Align-Content: Center</h2>
+  <div class="flex-container" style="align-content: center;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+    <div class="flex-item">Item 4</div>
+    <div class="flex-item">Item 5</div>
+    <div class="flex-item">Item 6</div>
+    <div class="flex-item">Item 7</div>
+    <div class="flex-item">Item 8</div>
+    <div class="flex-item">Item 9</div>
+  </div>
+
+  <h2>Align-Content: Flex-End</h2>
+  <div class="flex-container" style="align-content: flex-end;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+    <div class="flex-item">Item 4</div>
+    <div class="flex-item">Item 5</div>
+    <div class="flex-item">Item 6</div>
+    <div class="flex-item">Item 7</div>
+    <div class="flex-item">Item 8</div>
+    <div class="flex-item">Item 9</div>
+  </div>
+
+  <h2>Align-Content: Space-Between</h2>
+  <div class="flex-container" style="align-content: space-between;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+    <div class="flex-item">Item 4</div>
+    <div class="flex-item">Item 5</div>
+    <div class="flex-item">Item 6</div>
+    <div class="flex-item">Item 7</div>
+    <div class="flex-item">Item 8</div>
+    <div class="flex-item">Item 9</div>
+  </div>
+
+  <h2>Align-Content: Space-Around</h2>
+  <div class="flex-container" style="align-content: space-around;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+    <div class="flex-item">Item 4</div>
+    <div class="flex-item">Item 5</div>
+    <div class="flex-item">Item 6</div>
+    <div class="flex-item">Item 7</div>
+    <div class="flex-item">Item 8</div>
+    <div class="flex-item">Item 9</div>
+  </div>
+
+  <h2>Align-Content: Stretch</h2>
+  <div class="flex-container" style="align-content: stretch;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+    <div class="flex-item">Item 4</div>
+    <div class="flex-item">Item 5</div>
+    <div class="flex-item">Item 6</div>
+    <div class="flex-item">Item 7</div>
+    <div class="flex-item">Item 8</div>
+    <div class="flex-item">Item 9</div>
+  </div>
+</body>
+</html>

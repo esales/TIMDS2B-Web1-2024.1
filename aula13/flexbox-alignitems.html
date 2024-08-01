@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align-Items - Exemplo</title>
+  <style>
+    .flex-container {
+      display: flex;
+      height: 200px;
+      background-color: #f1f1f1;
+      margin-bottom: 20px;
+    }
+
+    .flex-item {
+      background-color: #4CAF50;
+      color: white;
+      margin: 5px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .item-maior {
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Align-Items: Flex-Start</h2>
+  <div class="flex-container" style="align-items: flex-start;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item item-maior">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h2>Align-Items: Center</h2>
+  <div class="flex-container" style="align-items: center;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item item-maior">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h2>Align-Items: Flex-End</h2>
+  <div class="flex-container" style="align-items: flex-end;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item item-maior">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h2>Align-Items: Stretch</h2>
+  <div class="flex-container" style="align-items: stretch;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item item-maior" style="font-size: 50px;">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h2>Align-Items: Baseline</h2>
+  <div class="flex-container" style="align-items: baseline;">
+    <div class="flex-item">Item 1</div>
+    <!-- <div class="flex-item item-maior">Item 2</div> -->
+    <div class="flex-item item-maior" style="font-size: 50px;">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+</body>
+</html>

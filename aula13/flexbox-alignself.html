@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de align-self</title>
+    <style>
+        .container {
+            display: flex;
+            border: 2px solid black;
+            height: 200px;
+            align-items: center; /* Alinha todos os itens no centro verticalmente */
+            justify-content: center;
+        }
+
+        .item {
+            border: 1px solid red;
+            padding: 10px;
+            margin: 5px;
+            background-color: lightgray;
+            font-size: 20px;
+            text-align: center;
+            height: 50px; /* Altura fixa para observar o alinhamento vertical */
+        }
+
+        .item1 {
+            background-color: lightcoral;
+        }
+
+        .item2 {
+            align-self: flex-end; /* Alinha o item no centro do container */
+            background-color: lightgreen;
+        }
+
+        .item3 {
+            align-self: flex-start;
+            background-color: lightblue;
+        }
+
+        .outros{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item outros">Item 4</div>
+        <div class="item outros">Item 5</div>
+        <div class="item outros">Item 6</div>
+        <div class="item outros">Item 7</div>
+    </div>
+</body>
+</html>
