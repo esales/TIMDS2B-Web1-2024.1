@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #um{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-color: aqua;
+        }
+
+        #dois{
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end:4;
+            background-color: blueviolet;
+        }
+
+        #tres{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 5;
+            background-color: chartreuse;
+        }
+
+        body{
+            display: grid;
+            margin: 0;
+            height: 100vh;
+
+            column-gap: 5px;
+            row-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="um">1</div>
+
+    <div id="dois">2</div>
+
+    <div id="tres">3</div>
+    
+</body>
+</html>

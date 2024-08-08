@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        body{
+            height: 100vh;
+            margin: 0;
+
+            display: grid;
+            grid-template-areas: "h h h h h h h h h h"
+                                 "h h h h h h h h h h"  
+                                 "n m m m m m m m m a"
+                                 "n m m m m m m m m a"
+                                 "n m m m m m m m m a"
+                                 "n m m m m m m m m a"
+                                 "n m m m m m m m m a"
+                                 "f f f f f f f f f f";
+        }
+
+        header{
+            background-color: darkturquoise;
+            grid-area: h;
+        }
+
+        nav{
+            background-color: olive;
+            grid-area: n;
+        }
+
+        main{
+            background-color: wheat;
+            
+            grid-area: m;
+        }
+
+        aside{
+            background-color: slategray;
+            grid-area: a;
+        }
+
+        footer{
+            background-color: khaki;
+            grid-area: f;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <main></main>
+    <aside></aside>
+    <footer></footer>
+</body>
+</html>
