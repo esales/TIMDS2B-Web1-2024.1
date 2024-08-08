@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between; /* Espaço igual entre itens */
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .item {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        .extra-item {
+            flex: 1; /* Ocupa o espaço restante */
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" style="background-color: lightgreen;">Item 1</div>
+        <div class="item" style="background-color: lightblue;">Item 2</div>
+        <div class="extra-item">Item Extra</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 9px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header, .footer {
+            background-color: lightcoral;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .main {
+            display: flex;
+            flex: 1; /* Ocupa o espaço restante */
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: lightblue;
+            padding: 10px;
+
+            flex:1;
+        }
+
+        .content {
+            flex: 8;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Cabeçalho</div>
+        <div class="main">
+            <div class="sidebar">Barra Lateral</div>
+            <div class="content">Área de Conteúdo Principal</div>
+        </div>
+        <div class="footer">Rodapé</div>
+    </div>
+</body>
+</html>
