@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+
+</head>
+<body>
+
+    <form action="http://localhost:3000" method="get">
+        <label for="iptNome">Nome</label>
+        <input name="nome" id="iptNome" type="text" />
+        <br><br>
+
+        <label for="selArea">Área de conhecimento</label>
+        <select name="area" id="selArea">
+            <option value="prg">Programação</option>
+            <option value="bd">Banco de dados</option>
+            <option value="tes">Testes</option>
+        </select>
+
+        <br><br>
+
+        <label for="radNivel">Nível</label>
+        <div id="radNivel">
+            <input type="radio" name="nivel" value="junior">Junior</input>
+            <input type="radio" name="nivel" value="pleno">Pleno</input>
+            <input type="radio" name="nivel" value="senior">Senior</input>
+        </div>
+        <br><br>
+
+        <label for="chkConhecimentos">Conhecimentos</label>
+        <div id="chkConhecimentos">
+            <input type="checkbox" name="HTML" value=true>HTML</input>
+            <input type="checkbox" name="CSS">CSS</input>
+            <input type="checkbox" name="JavaScript">JavaScript</input>
+        </div>
+        <br><br>
+
+        <input type="date" name="data">
+        <input type="datetime" name="data2">
+        <input type="datetime-local" name="data3">
+        <input type="month" name="data4" id="">
+        <input type="image" src="" alt="">
+        <input type="reset" value="reset">
+        <input type="week" name="asfasdf" id="">
+        <input type="time" name="fasfd" id="">
+        <input type="email" name="dsafas">
+
+        <br><br>
+
+        <input type="password" name="senha" id="">
+
+        <input type="submit" value="Cadastrar">
+    </form>
+    
+</body>
+</html>
