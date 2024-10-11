@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>getElementById</title>
+</head>
+<body>
+    <p id="primeiro" class="Teste">Parágrafo 1</p>
+    <p class="Teste">Parágrafo 2</p>
+    <a href="https://www.google.com">Link</a>
+    <input type="text" name="descricao">
+
+    <button onclick="funcao()">getElementById</button>
+    <button onclick="funcao2()">getElementsByClassName</button>
+
+    <script>
+        function funcao(){
+            let elemento = document.getElementById("primeiro");
+
+            console.log('id: ' + elemento.id);
+            console.log('textContent: ' + elemento.textContent);
+
+            elemento.textContent = "Novo texto!!!";
+        }
+
+        function funcao2(){
+            let elementos = document.getElementsByClassName("Teste");
+
+            console.log(elementos[0].textContent);
+            console.log(elementos[1].textContent);
+        }
+    </script>
+</body>
+</html>
