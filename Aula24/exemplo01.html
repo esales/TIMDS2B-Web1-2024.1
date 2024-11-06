@@ -1,6 +1,20 @@
 <html>
 <head>
     <title>Exemplo 01</title>
+
+    <style>
+        .fundoAzul{
+            background-color: blue;
+        }
+
+        .fonteVerde{
+            color: green;
+        }
+
+        .sublinhado{
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <p id="primeiro" class="Teste">Parágrafo 1</p>
@@ -11,6 +25,10 @@
     <br><br>
     <button onclick="funcao()">querySelector</button>
     <button onclick="funcao2()">querySelectorAll</button>
+    <button onclick="funcao3()">Estilo verde</button>
+
+    <button onclick="funcao4()">classList1</button>    
+    <button onclick="funcao5()">classList2</button>    
     
 </body>
 
@@ -29,6 +47,35 @@
             elemento => console.log(elemento.textContent)
         );
     }
+
+    function funcao3(){
+        let elementos = document.querySelectorAll('p');
+
+        elementos.forEach(
+            elemento => {
+                elemento.style.color = 'green';
+                elemento.style.fontSize = '30px';
+            }
+
+        )
+    }
+
+    function funcao4(){
+        let elemento = document.querySelector('.Teste');
+
+        elemento.classList.add('fundoAzul');
+        elemento.classList.add('fonteVerde');
+        elemento.classList.remove('sublinhado');
+    }
+
+    function funcao5(){
+        let elemento = document.querySelector('.Teste');
+
+        elemento.classList.remove('fundoAzul');
+        elemento.classList.add('sublinhado');
+    }
+
+    
 
 </script>
 </html>

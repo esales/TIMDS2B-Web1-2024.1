@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Exemplo 01</title>
+
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <img>
+
+    <button id="b1">Clique</button>
+    <button id="b2">Clique</button>
+</body>
+
+<script>
+    document.querySelector('#b1').addEventListener('click', function(){
+        let elementoImagem = document.querySelector('img');
+        let atributoSrc = document.createAttribute('src');
+
+        atributoSrc.value = 'minhaImagem.png';
+
+        elementoImagem.setAttributeNode(atributoSrc);
+    });
+
+    document.querySelector('#b2').addEventListener('click', function(){
+        let elementoImagem = document.querySelector('img');
+        elementoImagem.removeAttribute('src');
+    });
+
+
+</script>
+</html>

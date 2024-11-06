@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Exercício 02</title>
+</head>
+<body>
+    <img>
+    <br><br>
+    <button id="botao1">Imagem 1</button>
+    <button id="botao2">Imagem 2</button>
+    <button id="botao3">Alterar imagem</button>
+    <button id="botao4">Alterar imagem</button>
+</body>
+
+<script>
+    let imagem = document.querySelector('img');
+    let botao1 = document.querySelector('#botao1');
+    let botao2 = document.querySelector('#botao2');
+
+    botao1.addEventListener('dblclick', () => imagem.src = 'imagem1.png');
+    botao2.addEventListener('click', () => imagem.src = 'imagem2.png');
+
+    botao3.addEventListener('mouseover', () => imagem.src = 'imagem1.png');
+
+</script>
+</html>

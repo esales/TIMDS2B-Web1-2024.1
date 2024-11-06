@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Exemplo 03</title>
+</head>
+<body>
+    <input type="text" id="texto">
+    <button id="botao">Clique</button>
+
+    <ul id="lista">
+
+    </ul>
+</body>
+
+<script>
+    document.querySelector('#botao').addEventListener('click', function(){
+        let elementoLista = document.querySelector('#lista');
+
+        let elementoItem = document.createElement('li');
+
+        let texto = document.querySelector('#texto').value;
+        elementoItem.textContent = texto;
+
+        elementoLista.appendChild(elementoItem);
+    })
+  
+
+</script>
+</html>

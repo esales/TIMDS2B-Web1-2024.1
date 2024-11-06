@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Exercício 01</title>
+
+    <style>
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        div{
+            width: 150px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <label for="campoTitulo">Título</label>
+    <input type="text" id="campoTitulo">
+    <br>
+    <label for="campoDescricao">Descrição</label>
+    <input type="text" id="campoDescricao">
+    <br>
+    <button id="botao">Adicionar</button>
+
+    <br><br><br>
+    <section>
+
+    </section>
+</body>
+
+<script>
+    document.querySelector('#botao').addEventListener('click', function(){
+        let titulo = document.querySelector('#campoTitulo').value;
+        let descricao = document.querySelector('#campoDescricao').value;
+
+        if(titulo == '' || descricao == ''){
+            alert('Preencha todos os campos');
+            return;
+        }
+
+        let card = document.createElement('div');
+        let tituloCard = document.createElement('h3');
+        let descricaoCard = document.createElement('p');
+
+        tituloCard.textContent = titulo;
+        descricaoCard.textContent = descricao;
+
+        card.appendChild(tituloCard);
+        card.appendChild(descricaoCard);
+
+        document.querySelector('section').appendChild(card);
+
+        document.querySelector('#campoTitulo').value = "";
+        document.querySelector('#campoDescricao').value = "";
+    });
+
+</script>
+</html>

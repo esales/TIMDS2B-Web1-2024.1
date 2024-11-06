@@ -1,0 +1,33 @@
+<html >
+<head>
+    <title>Exemplo 02</title>
+
+    <style>
+        .destaque {
+            background-color: yellow;
+        }
+        .sem-destaque {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <button id="botao">Clique</button>    
+</body>
+
+<script>
+    let elemento = document.querySelector('#botao');
+    elemento.addEventListener('mousedown', () => console.log('mouse down') );
+    elemento.addEventListener('mouseup', () => console.log('mouse up') );
+    elemento.addEventListener('click', () => console.log('click') );
+    elemento.addEventListener('dblclick', () => console.log('double click') );
+
+    elemento.addEventListener('mouseover', () => console.log('mouse over') );
+    elemento.addEventListener('mouseout', () => console.log('mouse out') );
+
+    elemento.addEventListener('mouseover', (elemento) => elemento.classList.add('destaque'));
+    elemento.addEventListener('mouseout', (elemento) => elemento.classList.remove('destaque'));
+
+</script>
+
+</html>

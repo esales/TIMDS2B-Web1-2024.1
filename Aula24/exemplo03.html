@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Exemplo 03</title>
+</head>
+<body>
+    <input type="text" id="texto">
+    
+</body>
+<script>
+    let input = document.querySelector('#texto');
+    
+    input.addEventListener('keydown', 
+                            event => console.log(`tecla pressionada: ${event.key}`));
+
+
+    input.addEventListener('focus', () => input.style.backgroundColor = 'yellow');
+    input.addEventListener('blur', () => input.style.backgroundColor = 'white');
+</script>
+</html>

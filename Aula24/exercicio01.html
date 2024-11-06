@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Exercício 01</title>
+</head>
+<body>
+    <img />
+    <br><br>
+    <img  />
+    <br><br>
+    <button id="botao1">Imagem 1</button>
+    <button id="botao2">Imagem 2</button>
+</body>
+<script>
+    var elemento = document.querySelector("img");
+    
+        document.querySelector("#botao1").
+                    addEventListener("dblclick", () => elemento.src = "imagem1.png");
+
+    document.querySelector("#botao2").
+                    addEventListener("click", () => elemento.src = "imagem2.png" );
+</script>
+</html>
